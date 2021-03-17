@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(120deg,#f9e0ae,#fc8621);
+   
+    font-family: Montserrat,sans-serif;
+    color: #443d30;
+}
+
+header{
+    font-size: 1.5rem;
+}
+header,form {
+    min-height:20vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+form input, form button{
+    padding: 0.5rem;
+    background-color: aquamarine;
+    border: none;
+   
+   
+
+}
+form input{
+    min-width: 25%;
+}
+form button{
+    cursor: pointer;
+    color: brown;
+    background-color: aquamarine;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background-color: brown;
+    color: aqua;
+    
+
+}
+
+.todo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .todo-List{
+       list-style: none;
+       min-width: 30%;
+      
+   }
+   .todo{
+       margin: 00.5rem;
+       color: black;
+       font-size: 1.5rem;
+       display: flex;
+       justify-content: space-between;
+       align-items: centers;
+       background-color: cornsilk;
+    }
+    .todo li{
+        flex: 1;
+    }
+    .completed-button,
+    .trash-button{
+        border: none;
+        padding: 0.5rem;
+        background-color: rgb(182, 224, 108);
+        font-size: 1rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .trash-button{
+        background-color: darkred;
+    }
+        
+.fa-trash, .fa-check{
+    pointer-events: none;
+
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+select{
+    color: darkred;
+    width: 10rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.select::after{
+content: "\25BC";
+position: absolute;
+background: darkseagreen;
+top: 0;
+right: 0;
+padding: 0.5rem;
+pointer-events: none;
+}
